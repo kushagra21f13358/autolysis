@@ -34,7 +34,7 @@ def analyze_data(data):
         "info": data.dtypes.to_dict(),
         "missing_values": data.isnull().sum().to_dict(),
         "summary_stats": data.describe().to_dict()
-    }
+    } 
     return summary
 
 def visualize_data(data, output_dir):
